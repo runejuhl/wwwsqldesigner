@@ -2660,6 +2660,7 @@ SQL.Designer.prototype.toXML = function() {
 	var xml = '<?xml version="1.0" encoding="utf-8" ?>\n';
 	xml += '<!-- SQL XML created by WWW SQL Designer, http://code.google.com/p/wwwsqldesigner/ -->\n';
 	xml += '<!-- Active URL: ' + location.href + ' -->\n';
+	xml += '<!-- Generated at ' + Date() + ' -->\n';
 	xml += '<sql>\n';
 	
 	/* serialize datatypes */
