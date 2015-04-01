@@ -31,6 +31,7 @@
   </group>
 
   <group label="Miscellaneous" color="rgb(200,200,255)">
+    <type label="UUID" length="1" sql="UUID" quote="'" />
     <type label="XML" length="1" sql="XML" quote="'" />
     <type label="Bit" length="1" sql="BIT" quote="'" />
     <type label="Bit Varying" length="1" sql="VARBIT" re="BIT VARYING" quote="'" />
