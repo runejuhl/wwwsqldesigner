@@ -387,7 +387,9 @@ SQL.Row.prototype.toXML = function() {
     var d = this.data.def;
     if (d === null) {
       d = "NULL";
-    } else if (d != "CURRENT_TIMESTAMP") {
+    } else if (d.toUpperCase() != "CURRENT_TIMESTAMP" || d.match(/.*?\(\)$/)) {
+      // if default value is either current_timestamp or matches a
+      // function (that is, ends with a pair of parens)
       d = q+d+q;
     }
     xml += "<default>"+d+"</default>";
